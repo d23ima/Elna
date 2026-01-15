@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product gallery - Elna Construction Materials PLC showcasing steel, ceramic tiles, and construction materials in Ethiopia.">
+    <title>Product Gallery | Elna Construction Materials PLC</title>
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-379507869"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-379507869');
+  
+  // Track Ethiopian language selection
+  document.addEventListener('languageChanged', function(e) {
+    gtag('event', 'language_change', {
+      'language': e.detail.language
+    });
+  });
+</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Elna Construction Logo" height="50">
+                <span class="brand-text">ELNA CONSTRUCTION</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products/steel.html">Steel & Rebar</a></li>
+                            <li><a class="dropdown-item" href="products/ceramic.html">Ceramic Tiles</a></li>
+                            <li><a class="dropdown-item" href="products/tabs.html">Sanitary Tabs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products/distributor.html">Become Distributor</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/gallery hero.jpg') center;">
+        <div class="container">
+            <h1 class="display-4 bg-dark gallery-overlay">Product Gallery</h1>
+            <p class="lead">Visual showcase of our quality construction materials</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">All Products</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="steel">Steel & Rebar</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="ceramic">Ceramic Tiles</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="hygiene">Hygiene Products</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="projects">Project References</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 gallery-container" id="galleryGrid">
+                <!-- Steel Products -->
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="steel">
+                    <img src="images/products/rebar stock.jpg" alt="Rebar Stock">
+                    <div class="gallery-overlay">
+                        <h6>Rebar Stock</h6>
+                        <small>Grade 500 reinforcement bars</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="steel">
+                    <img src="images/products/steel beams.jpg" alt="Structural Steel Beams">
+                    <div class="gallery-overlay">
+                        <h6>Structural Beams</h6>
+                        <small>Universal beams and columns</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="steel">
+                    <img src="images/products/hss sections.jpg" alt="Hollow Sections">
+                    <div class="gallery-overlay">
+                        <h6>Hollow Sections</h6>
+                        <small>SHS, RHS, and CHS sections</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="steel">
+                    <img src="images/products/steel coils.jpg" alt="Steel Coils">
+                    <div class="gallery-overlay">
+                        <h6>Steel Coils</h6>
+                        <small>Galvanized and cold rolled</small>
+                    </div>
+                </div>
+                
+                <!-- Ceramic Tiles -->
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="ceramic">
+                    <img src="images/products/porcelain tiles.jpg" alt="Porcelain Tiles">
+                    <div class="gallery-overlay">
+                        <h6>Porcelain Tiles</h6>
+                        <small>60x60cm polished finish</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="ceramic">
+                    <img src="images/products/wood look tiles.jpg" alt="Wood Look Tiles">
+                    <div class="gallery-overlay">
+                        <h6>Wood Look Tiles</h6>
+                        <small>Wood effect porcelain planks</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="ceramic">
+                    <img src="images/products/marble tiles.jpg" alt="Marble Effect Tiles">
+                    <div class="gallery-overlay">
+                        <h6>Marble Effect</h6>
+                        <small>Natural stone look tiles</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="ceramic">
+                    <img src="images/products/bathroom tiles.jpg" alt="Bathroom Tiles">
+                    <div class="gallery-overlay">
+                        <h6>Bathroom Tiles</h6>
+                        <small>Wall and floor combinations</small>
+                    </div>
+                </div>
+                
+                <!-- Hygiene Products -->
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="hygiene">
+                    <img src="images/products/handwash tabs.jpg" alt="Handwash Tablets">
+                    <div class="gallery-overlay">
+                        <h6>Handwash Tablets</h6>
+                        <small>Antibacterial soap tabs</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="hygiene">
+                    <img src="images/products/soap dispensers.jpg" alt="Soap Dispensers">
+                    <div class="gallery-overlay">
+                        <h6>Soap Dispensers</h6>
+                        <small>Wall mounted systems</small>
+                    </div>
+                </div>
+                
+                <!-- Project References -->
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="projects">
+                    <img src="images/projects/construction site.jpg" alt="Construction Site Supply">
+                    <div class="gallery-overlay">
+                        <h6>Site Delivery</h6>
+                        <small>Rebar delivery to project site</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="projects">
+                    <img src="images/projects/commercial project.jpg" alt="Commercial Project">
+                    <div class="gallery-overlay">
+                        <h6>Commercial Project</h6>
+                        <small>Steel supply for commercial building</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="projects">
+                    <img src="images/projects/residential tiles.jpg" alt="Residential Tile Installation">
+                    <div class="gallery-overlay">
+                        <h6>Residential Project</h6>
+                        <small>Tile installation in apartment</small>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 gallery-item" data-category="projects">
+                    <img src="images/projects/warehouse construction.jpg" alt="Warehouse Construction">
+                    <div class="gallery-overlay">
+                        <h6>Warehouse Construction</h6>
+                        <small>Structural steel framework</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="products/distributor.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-file-invoice-dollar me-2"></i> Request Custom Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Elna Construction Materials PLC</h5>
+                    <p>Your trusted partner for quality construction materials in Ethiopia.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- In the footer, add this section or modify existing one: -->
+                <div class="col-md-3">
+                  <h5 data-translate="legal">Legal</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="privacy-policy.html" class="text-light" data-translate="privacy_policy">Privacy Policy</a></li>
+                    <li><a href="terms-conditions.html" class="text-light" data-translate="terms_conditions">Terms & Conditions</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="products/steel.html" class="text-light">Steel Products</a></li>
+                        <li><a href="products/ceramic.html" class="text-light">Ceramic Tiles</a></li>
+                        <li><a href="gallery.html" class="text-light">Product Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Addis Ababa, Ethiopia<br>
+                    Phone: +251 911 232 673<br>
+                    Email: sales@elnaconstruction.et</p>
+                    <p class="mb-0">© 2026 Elna Construction Materials PLC. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Gallery filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('[data-filter]');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter items
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
