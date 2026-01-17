@@ -1,4 +1,133 @@
-/* Enhanced Mobile Responsive Design for Elna Construction */
+/* Responsive Design */
+@media (max-width: 1199.98px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .brand-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand .brand-text {
+        font-size: 0.9rem;
+    }
+    
+    .banner-overlay {
+        padding: 100px 0 40px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .quick-nav-overlay {
+        padding: 15px 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .phone-link {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .quick-quote-form .input-group {
+        flex-direction: column;
+    }
+    
+    .quick-quote-form input {
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    
+    .quick-quote-form button {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .chatbot-container {
+        width: 280px;
+        right: -30px;
+    }
+    
+    .floating-whatsapp {
+        bottom: 80px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .navbar-brand img {
+        height: 40px;
+    }
+    
+    .brand-text {
+        font-size: 0.8rem;
+    }
+    
+    .banner-overlay {
+        padding: 80px 0 30px;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .carousel-item {
+        height: 250px;
+    }
+    
+    .carousel-caption {
+        padding: 10px;
+        bottom: 10px !important;
+    }
+    
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.8rem;
+        display: none;
+    }
+    
+    .chatbot-container {
+        width: 250px;
+        right: -20px;
+    }
+    
+    .quick-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .quote-form-section {
+        padding: 20px;
+    }
+}
 
 /* ========== GENERAL MOBILE FIXES ========== */
 
