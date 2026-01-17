@@ -1,4 +1,115 @@
 /* Responsive Design */
+/* ===== COMPACT NAVIGATION BAR ===== */
+.compact-nav {
+    background-color: var(--primary-color) !important; /* Your existing blue */
+    padding: 5px 0;
+    min-height: 60px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1030; /* Ensures it stays above other content */
+}
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; /* Makes the square favicon circular */
+    object-fit: contain;
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border for definition */
+    transition: all 0.3s ease;
+}
+
+.nav-logo:hover {
+    border-color: white;
+    transform: scale(1.05);
+}
+
+.compact-nav .nav-link {
+    padding: 8px 15px !important;
+    font-weight: 500;
+}
+
+.compact-nav .navbar-nav {
+    align-items: center;
+}
+
+/* ===== HERO SECTION WITH TRANSPARENT TITLE ===== */
+.hero-section {
+    position: relative;
+    min-height: 85vh; /* Adjust this to control height */
+    display: flex;
+    align-items: center;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), /* Dark overlay for readability */
+        url('../images/hero-home.jpg') center center / cover no-repeat;
+    margin-top: 60px; /* Prevents content from hiding under the fixed nav */
+}
+
+.hero-overlay {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.hero-title-container {
+    text-align: center;
+    color: white;
+    padding: 40px;
+    background-color: rgba(26, 75, 140, 0.75); /* Semi-transparent blue background */
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Creates a subtle frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-main-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+    .compact-nav {
+        padding: 5px 0;
+        min-height: 50px;
+    }
+    
+    .nav-logo {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .hero-section {
+        min-height: 70vh;
+        margin-top: 50px;
+    }
+    
+    .hero-title-container {
+        padding: 25px 15px;
+    }
+    
+    .hero-main-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .compact-nav .nav-link {
+        padding: 10px !important;
+        font-size: 0.95rem;
+    }
+}
 @media (max-width: 1199.98px) {
     .hero-content h1 {
         font-size: 2.5rem;
